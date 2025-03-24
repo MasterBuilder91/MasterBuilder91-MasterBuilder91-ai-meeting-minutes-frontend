@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_API_URL": "YOUR_RAILWAY_BACKEND_URL",
+    "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY": "YOUR_STRIPE_PUBLISHABLE_KEY"
+  }
+}
