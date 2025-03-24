@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 249, 250, 251;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.card-element {
+  border: 1px solid #e2e8f0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.card-element.StripeElement--focus {
+  border-color: #4F46E5;
+  box-shadow: 0 0 0 1px #4F46E5;
+}
